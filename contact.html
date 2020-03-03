@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<!--[if lt IE 9]>
+	<script
+	src="http://html5shiv.googlecode.com/svn/trunk/html2.js"></sript>
+	<![endif]-->
+	<!--[if lt IE 7]>
+	<link
+	rel="stylesheet" href="style_ie.css" />
+	<![endif]-->
+		<title> Clément - Le Caribou </title>
+	</head>
+	
+	<body>
+		<div id="bloc_page">
+			<header>
+				<div id="titre_principal">
+					<header>
+						<img src="logo_caribou.png" alt="Logo de Clément - Le Caribou" id="logo" />
+						<h1> Clément </h1>
+						<h2> Le Caribou </h2>
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="quijesuis.html"> Qui je suis ? </a></li>
+						<li><a href="acti.html"> Les caribous </a></li>
+						<li><a href="contact.html"> Contact </a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<div id="bannière_image">
+				<div id="banniere_description">
+					Bienvenue dans mon monde ! Celui des caribous... 
+				</div>
+			</div>
+			
+			<h1> Formulaire de Contact </h1>
+			
+			<form method="post" action="traitement.php">
+			
+				<p>
+					<label for="sexe"> Sexe: </label><br /><br />
+					<select name="sexe" id="sexe" >
+						<option value="Homme">Un Homme </option>
+						<option value="Femme">Une Femme </option>
+						<option value="autre"> Autre </option><br />
+					</select><br /><br />
+					<label for="type" >Vous êtes : </label><br /><br />
+					<input type="radio" name="type" value="particulier" id="particulier" /><label for="particulier" > Un particulier </label><br /> 
+					<input type="radio" name="type" value="professionnel" id="professionnel" /><label for="professionnel" > Un professionel </label><br /> <br />
+					<label for="Nom" >Nom</label> : <input type="text" name="Nom" id="Nom" required placeholder="Ex: Facchin"" /></p>
+					<label for="Prénom" >Prénom</label> : <input type="text" name="Prenom" id="Prenom" required placeholder="Ex: Alexandre"" /></p>
+					<label for="email" >e-mail</label> : <input type="email" name="email" id="email" required placeholder="Ex: alexandre.facchin@nomdedomaine.fr"" /></p>
+					<label for="raison"> Mon message concerne </label>:<br/><br />   
+					<input type="checkbox" name="Remarque" id="remarque" /><label for="remarque"> Une Remarque</label><br/>
+					<input type="checkbox" name="Suggestion" id="suggestion" /><label for="suggestion"> Une Suggestion</label><br/>
+					<input type="checkbox" name="info" id="info" /><label for="info"> Une demande d'informations</label><br/>
+					<input type="checkbox" name="offre" id="offre" /><label for="offre"> Une offre d'emploi</label><br/>
+					<input type="checkbox" name="autre" id="autre" /><label for="autre"> Autre chose</label><br/><br />
+					<label for="Message" >Message</label><br /> <textarea name="Message" id="Message" placeholder="Ex: J'adore je suis fan je t'aime ! ""></textarea>
+					<br /><br /><input type="submit" value="Envoyer" />
+				</p>
+			</form>
+			
+			<footer>
+			
+			<div class="footer">
+			<div id="mes_amis">
+			<table>
+				<tr>
+					<th> Le site de mes amis </th>
+				</tr>
+				<tr>
+					<td> <a href="http://ouvea.lyceelafayette.fr/~khiari_c/" > Le Blog de CamCam </a> </td>
+				</tr>
+				<tr>
+					<td> <a href="http://ouvea.lyceelafayette.fr/~le_quement_c/" > Claraclette </a> </td>
+				</tr>
+				<tr>
+					<td> <a href="http://ouvea.lyceelafayette.fr/~philippe_m/" > Le Blog de Matis </a> </td>
+				</tr>
+				<tr>
+					<td> <a href="http://ouvea.lyceelafayette.fr/~keo_t/" > Le Blog de Titi </a> </td>
+				</tr>
+				<tr>
+					<td> <a href="http://ouvea.lyceelafayette.fr/~vaucouleur_v/" > Le blog de MrFeuilleVerte </a> </td>
+				</tr>
+			</table>	
+				</div>
+			</div>
+			</footer>
+		</div>
+	</body>
+</html>	
+				
