@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="style.css" />
+		<link href="lightbox/css/lightbox.css" rel="stylesheet" />
 		<!--[if lt IE 9]>
 	<script
 	src="http://html5shiv.googlecode.com/svn/trunk/html2.js"></sript>
@@ -59,15 +60,15 @@
 				<li><a href="https://fr.wikipedia.org/wiki/Rangifer_tarandus" > Le caribou </a></li>	
 			</ul>
 			
-			<p> Et oui tu as compris le caribou n'est rien d'autre que le renne mais au canada ! </p>
+			<p> Et oui tu as compris le caribou n'est rien d'autre que le reine mais au canada ! </p>
 			
 			<h1> Tu en veux encore ? Voici les plus beaux clichés de caribous </h1>
-			<p> Clique sur n'importe quelle photo pour l'afficher en plus grande ! </p>
+			<p> Clique sur n'importe quelle photo pour afficher un diaporama! </p>
 			<div class="photos">
-			<a href="caribou1.jpg"><img src="tn_caribou1.jpg" alt="caribou1" title="Clique pour voir en grand" />
-			<a href="caribou2.jpg"><img src="tn_caribou2.jpg" alt="caribou1" title="Clique pour voir en grand" />
-			<a href="caribou3.jpg"><img src="tn_caribou3.jpg" alt="caribou1" title="Clique pour voir en grand" />
-			<a href="caribou4.jpg"><img src="tn_caribou4.jpg" alt="caribou1" title="Clique pour voir en grand" />
+			<a data-lightbox="diaporama" href="caribou1.jpg"><img src="tn_caribou1.jpg" alt="caribou1" title="Clique pour voir en grand" /></a>
+			<a data-lightbox="diaporama" href="caribou2.jpg"><img src="tn_caribou2.jpg" alt="caribou1" title="Clique pour voir en grand" /></a>
+			<a data-lightbox="diaporama" href="caribou3.jpg"><img src="tn_caribou3.jpg" alt="caribou1" title="Clique pour voir en grand" /></a>
+			<a data-lightbox="diaporama" href="caribou4.jpg"><img src="tn_caribou4.jpg" alt="caribou1" title="Clique pour voir en grand" /></a>
 			</div>
 			<p> Et en cadeau je t'invite à télécharger un cadeau en cliquant <a href="sven1.gif" download="sven1.gif">ici </a> </p>
 			
@@ -105,6 +106,18 @@
 				</div>
 			</div>
 			</footer>
+
+			<script src="lightbox/js/jquery-pour-lightbox.js"></script>
+			<script src="lightbox/js/lightbox.js"></script>
+			<script>
+				lightbox.option({
+					'resizeDuration': 200,
+					'wrapAround': true,
+					'borderRadius' : '30px',
+					'borderColor' : "#eb9234"
+				})
+			</script>
+
 		</div>
 	</body>
 </html>	
